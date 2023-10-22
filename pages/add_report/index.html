@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fazer Denúncia</title>
+</head>
+<body>
+
+    <header class="header">
+        <button class="back-button" id="back-button">
+            <i class="fas fa-arrow-left"></i> 
+        </button>
+        <h1 class="title">Fazer Denúncia</h1>
+        <div class="space"></div>
+    </header>
+    <form >
+        
+        <!-- Campo de Imagem -->
+        <label for="imagem">Imagem da Denúncia:</label>
+        <input type="file" name="imagem" id="imagem" accept="image/*" required>
+        
+        <!-- Campo de Descrição -->
+        <label for="descricao">Descrição da Denúncia:</label>
+        <textarea name="descricao" id="descricao" rows="4" required></textarea>
+        
+        <!-- Campo de Endereço -->
+        <label for="endereco">Endereço da Denúncia:</label>
+        <input type="text" name="endereco" id="endereco" required>
+        
+        <button type="submit" class="button">Fazer denúncia</button>
+    </form>
+   <script>
+    const backButton = document.getElementById("back-button");
+
+
+    backButton.addEventListener("click", function() {
+
+  window.location.href = "../home/index.html"; 
+});
+   </script>
+</body>
+</html>

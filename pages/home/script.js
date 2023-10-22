@@ -127,5 +127,13 @@ function inicializarPagina() {
   renderizarDenuncias();
 }
 
+const addDenunciaButton = document.getElementById("add-denuncia-button");
+
+  // Adicione um ouvinte de evento de clique ao botão
+  addDenunciaButton.addEventListener("click", function() {
+    // Redirecione o usuário para a nova rota
+    window.location.href = "../add_report/index.html"; 
+  });
+
 // Chama a função para inicializar a página quando a página carregar
 window.addEventListener("load", inicializarPagina);

@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-    <div class="signup-container">
-        <div class="signup-box">
-            <div class="signup-info">
-                <h1>Cadastro</h1>
-            </div>
-            <div class="signup-form">
+    <header class="header">
+        <button class="back-button" id="back-button">
+            <i class="fas fa-arrow-left"></i> 
+        </button>
+        <h1 class="title">Cadastre-se</h1>
+        <div class="space"></div>
+    </header>
+
             <form id="signup-form">
                 <div class="form-group">
                     <label for="nome">Nome completo</label>
@@ -50,9 +54,7 @@
                 </div>
                 <div class="error-message" id="error-message"></div>
             </form>
-        </div>
-        </div>
-    </div>
+       
     <script src="script.js"></script>
 </body>
 </html>
